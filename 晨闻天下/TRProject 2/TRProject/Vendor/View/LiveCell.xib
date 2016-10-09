@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LiveCell" rowHeight="142" id="KGk-i7-Jjw" customClass="LiveCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="141.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgF-li-Xc5">
+                        <rect key="frame" x="8" y="8" width="39.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVM-jT-iGr">
+                        <rect key="frame" x="15" y="116" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHY-eD-Lzd">
+                        <rect key="frame" x="269" y="116" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GFl-lT-jZU">
+                        <rect key="frame" x="8" y="35.5" width="304" height="72.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="131" id="3ZU-Di-SvA"/>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="72" id="gLb-GN-cng"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="gLb-GN-cng"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="GFl-lT-jZU" secondAttribute="trailing" constant="8" id="42p-DR-YdZ"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EgF-li-Xc5" secondAttribute="trailing" constant="8" id="9SF-i7-V17"/>
+                    <constraint firstItem="EgF-li-Xc5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="EbF-BW-7PM"/>
+                    <constraint firstItem="EgF-li-Xc5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="IJw-Ya-9M7"/>
+                    <constraint firstItem="uVM-jT-iGr" firstAttribute="top" secondItem="GFl-lT-jZU" secondAttribute="bottom" constant="8" id="M5c-DQ-aNd"/>
+                    <constraint firstAttribute="bottom" secondItem="kHY-eD-Lzd" secondAttribute="bottom" constant="8" id="U0Y-jf-Udo"/>
+                    <constraint firstAttribute="bottom" secondItem="uVM-jT-iGr" secondAttribute="bottom" constant="8" id="XhI-5x-cGF"/>
+                    <constraint firstAttribute="trailing" secondItem="kHY-eD-Lzd" secondAttribute="trailing" constant="15.5" id="cTc-kH-p1G"/>
+                    <constraint firstItem="GFl-lT-jZU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="nJt-l6-RcJ"/>
+                    <constraint firstItem="uVM-jT-iGr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="vxD-Ej-kz1"/>
+                    <constraint firstItem="GFl-lT-jZU" firstAttribute="top" secondItem="EgF-li-Xc5" secondAttribute="bottom" constant="8" id="zkT-mV-e99"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="iconIV" destination="GFl-lT-jZU" id="4Oz-nl-o44"/>
+                <outlet property="liveState" destination="kHY-eD-Lzd" id="eex-Qc-0RS"/>
+                <outlet property="title" destination="EgF-li-Xc5" id="nvr-uZ-zZU"/>
+                <outlet property="userCount" destination="uVM-jT-iGr" id="y8S-kl-Vkc"/>
+            </connections>
+            <point key="canvasLocation" x="268" y="353"/>
+        </tableViewCell>
+    </objects>
+</document>
